@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. YeonJung Kim
+  ~
+  ~  GitHub : @duswnd25
+  ~  Site   : https://yeonjung.herokuapp.com/
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:icon="@null"
+        android:title="@string/hint_for_my_information">
+        <Preference
+            android:icon="@drawable/ic_favorite"
+            android:key="@string/pref_like_list"
+            android:title="@string/pref_like_list_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:icon="@null"
+        android:title="@string/hint_for_notification">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_fcm"
+            android:key="@string/pref_notification"
+            android:summaryOff="@string/pref_notification_description_off"
+            android:summaryOn="@string/pref_notification_description_on"
+            android:title="@string/pref_notification_title" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_notification"
+            android:icon="@drawable/ic_sound"
+            android:key="@string/pref_notification_sound"
+            android:summaryOff="@string/pref_notification_sound_description_off"
+            android:summaryOn="@string/pref_notification_sound_description_on"
+            android:title="@string/pref_notification_sound_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:icon="@null"
+        android:title="개발팀">
+        <Preference
+            android:icon="@drawable/ic_node"
+            android:summary="구정수, 김연중"
+            android:title="Server Developer" />
+        <Preference
+            android:icon="@drawable/ic_android"
+            android:summary="김연중"
+            android:title="Android Client Developer" />
+        <Preference
+            android:icon="@drawable/ic_db"
+            android:summary="김연중"
+            android:title="Database Server Developer" />
+        <Preference
+            android:icon="@drawable/ic_ml"
+            android:summary="김천화, 이제영"
+            android:title="Machine Learning CNN-KNN Developer" />
+        <Preference
+            android:icon="@drawable/ic_design"
+            android:summary="선아름"
+            android:title="UI/UX ICON Designer" />
+        <Preference
+            android:icon="@drawable/ic_plan"
+            android:summary="이민지"
+            android:title="Planner" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:icon="@null"
+        android:title="License">
+        <Preference
+            android:icon="@drawable/ic_icons8"
+            android:summary="https://icons8.com/"
+            android:title="icon image" />
+        <Preference
+            android:icon="@drawable/ic_open_source"
+            android:key="pref_license"
+            android:title="Open Source License" />
+    </PreferenceCategory>
+</PreferenceScreen>

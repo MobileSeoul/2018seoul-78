@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. YeonJung Kim
+  ~
+  ~  GitHub : @duswnd25
+  ~  Site   : https://yeonjung.herokuapp.com/
+  -->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_explore_container"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    app:cardCornerRadius="0dp"
+    app:cardUseCompatPadding="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.lid.lib.LabelImageView
+            android:id="@+id/item_explore_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:label_backgroundColor="#C2185B"
+            app:label_height="30dp"
+            app:label_orientation="RIGHT_TOP"
+            tools:src="@drawable/placeholder" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_shadow_horizontal"
+            android:padding="@dimen/padding_default">
+
+            <TextView
+                android:id="@+id/item_explore_title"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_default"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                tools:text="제목" />
+
+            <TextView
+                android:id="@+id/item_explore_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:maxLines="3"
+                android:textColor="@android:color/white"
+                tools:text="설명" />
+        </FrameLayout>
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

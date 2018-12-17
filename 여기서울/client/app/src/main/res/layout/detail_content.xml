@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. YeonJung Kim
+  ~
+  ~  GitHub : @duswnd25
+  ~  Site   : https://yeonjung.herokuapp.com/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_default"
+    tools:context=".ui.main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/detail_correction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_half">
+
+        <ImageView
+            android:layout_width="@dimen/detail_icon_size"
+            android:layout_height="@dimen/detail_icon_size"
+            android:layout_marginEnd="@dimen/padding_half"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_correction_black" />
+
+        <me.grantland.widget.AutofitTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingStart="@dimen/padding_half"
+            android:text="@string/information_correction"
+            app:sizeToFit="true"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_half">
+
+        <ImageView
+            android:layout_width="@dimen/detail_icon_size"
+            android:layout_height="@dimen/detail_icon_size"
+            android:layout_marginEnd="@dimen/padding_half"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_clock_black" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/detail_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="@dimen/padding_half"
+            app:sizeToFit="true"
+            tools:ignore="RtlSymmetry"
+            tools:text="영업시간" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_half">
+
+        <ImageView
+            android:layout_width="@dimen/detail_icon_size"
+            android:layout_height="@dimen/detail_icon_size"
+            android:layout_marginEnd="@dimen/padding_half"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_tag_black" />
+
+
+        <TextView
+            android:id="@+id/detail_tag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_half"
+            android:paddingEnd="@dimen/padding_default"
+            android:text="@string/tag_food" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_half">
+
+        <ImageView
+            android:layout_width="@dimen/detail_icon_size"
+            android:layout_height="@dimen/detail_icon_size"
+            android:layout_marginEnd="@dimen/padding_half"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_phone_black" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/detail_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingStart="@dimen/padding_half"
+            app:sizeToFit="true"
+            tools:ignore="RtlSymmetry"
+            tools:text="전화번호" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_half">
+
+        <ImageView
+            android:layout_width="@dimen/detail_icon_size"
+            android:layout_height="@dimen/detail_icon_size"
+            android:layout_marginEnd="@dimen/padding_half"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_address_black" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="@dimen/padding_half"
+            app:sizeToFit="true"
+            tools:ignore="RtlSymmetry"
+            tools:text="위치" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_half">
+
+        <ImageView
+            android:layout_width="@dimen/detail_icon_size"
+            android:layout_height="@dimen/detail_icon_size"
+            android:layout_marginEnd="@dimen/padding_half"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_distance_black" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/detail_distance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="@dimen/padding_half"
+            app:sizeToFit="true"
+            tools:ignore="RtlSymmetry"
+            tools:text="위치" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_half">
+
+        <ImageView
+            android:layout_width="@dimen/detail_icon_size"
+            android:layout_height="@dimen/detail_icon_size"
+            android:layout_marginEnd="@dimen/padding_half"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_content_black" />
+
+        <TextView
+            android:id="@+id/detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/padding_half"
+            tools:ignore="RtlSymmetry"
+            tools:text="위치" />
+    </LinearLayout>
+</LinearLayout>

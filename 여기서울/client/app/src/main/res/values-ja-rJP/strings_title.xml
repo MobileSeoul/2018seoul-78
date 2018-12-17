@@ -1,0 +1,12 @@
+<!--
+  ~ Copyright (c) 2018. YeonJung Kim
+  ~
+  ~  GitHub : @duswnd25
+  ~  Site   : https://yeonjung.herokuapp.com/
+  -->
+
+<resources>
+    <string name="title_activity_detail">の詳細を見る</string>
+    <string name="title_activity_edit">情報修正</string>
+    <string name="title_activity_bookmark">チムハン場所</string>
+</resources>
